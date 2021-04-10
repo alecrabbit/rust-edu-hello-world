@@ -1,0 +1,7 @@
+&rs-cli rs-cli:
+    image: rust:1-alpine
+    hostname: *rs-cli
+    tty: true
+    volumes:
+      - .:/app
+    working_dir: /app
